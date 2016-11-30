@@ -1,6 +1,6 @@
 ﻿namespace car_rental_practice
 {
-    partial class Form1
+    partial class lblAC
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lblAC));
             this.comboBox1Type = new System.Windows.Forms.ComboBox();
             this.lblVehicleType = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCustomerName = new System.Windows.Forms.TextBox();
-            this.txtAge = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1ReturnCus = new System.Windows.Forms.CheckBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.lblUnder25 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dateTimePicker1PickUp = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,24 +42,34 @@
             this.btnPrintContract = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnPrintEstimate = new System.Windows.Forms.Button();
+            this.lblNewCustomer = new System.Windows.Forms.Label();
+            this.btnNewCustomer = new System.Windows.Forms.Button();
             this.txtCostOfRental = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lblFirst = new System.Windows.Forms.Label();
+            this.lblLast = new System.Windows.Forms.Label();
+            this.txtLast = new System.Windows.Forms.TextBox();
+            this.ckbxUnder25 = new System.Windows.Forms.CheckBox();
+            this.lblAutoTrans = new System.Windows.Forms.Label();
+            this.CkBxAutoTrans = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ckbxAC = new System.Windows.Forms.CheckBox();
+            this.lblDriversLicense = new System.Windows.Forms.Label();
+            this.txtDriversLicense = new System.Windows.Forms.TextBox();
+            this.lblOptionalInsurance = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // comboBox1Type
             // 
             this.comboBox1Type.FormattingEnabled = true;
             this.comboBox1Type.Items.AddRange(new object[] {
-            "Full-Size Car",
-            "Compact Car",
-            "Truck",
-            "SUV"});
-            this.comboBox1Type.Location = new System.Drawing.Point(277, 173);
+            "2 doors",
+            "4 doors"});
+            this.comboBox1Type.Location = new System.Drawing.Point(552, 224);
             this.comboBox1Type.Name = "comboBox1Type";
-            this.comboBox1Type.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1Type.Size = new System.Drawing.Size(73, 21);
             this.comboBox1Type.TabIndex = 2;
             // 
             // lblVehicleType
@@ -69,11 +78,12 @@
             this.lblVehicleType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lblVehicleType.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblVehicleType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicleType.Location = new System.Drawing.Point(277, 140);
+            this.lblVehicleType.Location = new System.Drawing.Point(550, 199);
             this.lblVehicleType.Name = "lblVehicleType";
-            this.lblVehicleType.Size = new System.Drawing.Size(101, 22);
+            this.lblVehicleType.Size = new System.Drawing.Size(129, 22);
             this.lblVehicleType.TabIndex = 3;
-            this.lblVehicleType.Text = "Vehicle Type";
+            this.lblVehicleType.Text = "Number of doors";
+            this.lblVehicleType.Click += new System.EventHandler(this.lblVehicleType_Click);
             // 
             // label1
             // 
@@ -99,41 +109,24 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Customer Name";
             // 
-            // txtCustomerName
+            // txtFirstName
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(31, 65);
-            this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(176, 20);
-            this.txtCustomerName.TabIndex = 9;
+            this.txtFirstName.Location = new System.Drawing.Point(84, 69);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(122, 20);
+            this.txtFirstName.TabIndex = 9;
             // 
-            // txtAge
+            // lblUnder25
             // 
-            this.txtAge.Location = new System.Drawing.Point(44, 171);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(33, 20);
-            this.txtAge.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 140);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 22);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Renter\'s Age";
-            // 
-            // checkBox1ReturnCus
-            // 
-            this.checkBox1ReturnCus.AutoSize = true;
-            this.checkBox1ReturnCus.Location = new System.Drawing.Point(31, 214);
-            this.checkBox1ReturnCus.Name = "checkBox1ReturnCus";
-            this.checkBox1ReturnCus.Size = new System.Drawing.Size(161, 17);
-            this.checkBox1ReturnCus.TabIndex = 12;
-            this.checkBox1ReturnCus.Text = "Check if Returning Customer";
-            this.checkBox1ReturnCus.UseVisualStyleBackColor = true;
+            this.lblUnder25.AutoSize = true;
+            this.lblUnder25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblUnder25.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblUnder25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnder25.Location = new System.Drawing.Point(35, 264);
+            this.lblUnder25.Name = "lblUnder25";
+            this.lblUnder25.Size = new System.Drawing.Size(90, 22);
+            this.lblUnder25.TabIndex = 11;
+            this.lblUnder25.Text = "Under 25 ?";
             // 
             // btnSearch
             // 
@@ -141,7 +134,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSearch.Location = new System.Drawing.Point(537, 165);
+            this.btnSearch.Location = new System.Drawing.Point(61, 399);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 29);
             this.btnSearch.TabIndex = 13;
@@ -162,11 +155,12 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(523, 40);
+            this.label3.Location = new System.Drawing.Point(526, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 22);
             this.label3.TabIndex = 15;
             this.label3.Text = "Return Date";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // dateTimePicker2ReturnDate
             // 
@@ -180,7 +174,7 @@
             this.btnPrintContract.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPrintContract.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPrintContract.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrintContract.Location = new System.Drawing.Point(523, 320);
+            this.btnPrintContract.Location = new System.Drawing.Point(592, 402);
             this.btnPrintContract.Name = "btnPrintContract";
             this.btnPrintContract.Size = new System.Drawing.Size(75, 29);
             this.btnPrintContract.TabIndex = 17;
@@ -193,11 +187,11 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(503, 297);
+            this.label5.Location = new System.Drawing.Point(526, 374);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 22);
+            this.label5.Size = new System.Drawing.Size(190, 22);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Print a Contract";
+            this.label5.Text = "Print a Rental Agreement";
             // 
             // label6
             // 
@@ -205,42 +199,43 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(519, 137);
+            this.label6.Location = new System.Drawing.Point(35, 374);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(146, 22);
             this.label6.TabIndex = 19;
             this.label6.Text = "Search For Vehicle";
             // 
-            // label7
+            // lblNewCustomer
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(244, 297);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 22);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Print an Estimate";
+            this.lblNewCustomer.AutoSize = true;
+            this.lblNewCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblNewCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNewCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewCustomer.Location = new System.Drawing.Point(35, 154);
+            this.lblNewCustomer.Name = "lblNewCustomer";
+            this.lblNewCustomer.Size = new System.Drawing.Size(128, 22);
+            this.lblNewCustomer.TabIndex = 20;
+            this.lblNewCustomer.Text = "New Customer ?";
             // 
-            // btnPrintEstimate
+            // btnNewCustomer
             // 
-            this.btnPrintEstimate.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPrintEstimate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPrintEstimate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrintEstimate.Location = new System.Drawing.Point(263, 320);
-            this.btnPrintEstimate.Name = "btnPrintEstimate";
-            this.btnPrintEstimate.Size = new System.Drawing.Size(75, 29);
-            this.btnPrintEstimate.TabIndex = 21;
-            this.btnPrintEstimate.Text = "Print";
-            this.btnPrintEstimate.UseVisualStyleBackColor = false;
+            this.btnNewCustomer.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnNewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewCustomer.Location = new System.Drawing.Point(35, 179);
+            this.btnNewCustomer.Name = "btnNewCustomer";
+            this.btnNewCustomer.Size = new System.Drawing.Size(75, 29);
+            this.btnNewCustomer.TabIndex = 21;
+            this.btnNewCustomer.Text = "NEW";
+            this.btnNewCustomer.UseVisualStyleBackColor = false;
             // 
             // txtCostOfRental
             // 
-            this.txtCostOfRental.Location = new System.Drawing.Point(61, 320);
+            this.txtCostOfRental.Location = new System.Drawing.Point(304, 399);
             this.txtCostOfRental.Name = "txtCostOfRental";
-            this.txtCostOfRental.Size = new System.Drawing.Size(74, 20);
+            this.txtCostOfRental.Size = new System.Drawing.Size(116, 20);
             this.txtCostOfRental.TabIndex = 22;
+            this.txtCostOfRental.TextChanged += new System.EventHandler(this.txtCostOfRental_TextChanged);
             // 
             // label8
             // 
@@ -248,7 +243,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(40, 297);
+            this.label8.Location = new System.Drawing.Point(304, 374);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(116, 22);
             this.label8.TabIndex = 23;
@@ -264,18 +259,155 @@
             this.label9.TabIndex = 24;
             this.label9.Text = "ACME Rental Co.";
             // 
-            // Form1
+            // lblFirst
+            // 
+            this.lblFirst.AutoSize = true;
+            this.lblFirst.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFirst.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirst.Location = new System.Drawing.Point(36, 68);
+            this.lblFirst.Name = "lblFirst";
+            this.lblFirst.Size = new System.Drawing.Size(42, 21);
+            this.lblFirst.TabIndex = 25;
+            this.lblFirst.Text = "First";
+            // 
+            // lblLast
+            // 
+            this.lblLast.AutoSize = true;
+            this.lblLast.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblLast.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLast.Location = new System.Drawing.Point(37, 98);
+            this.lblLast.Name = "lblLast";
+            this.lblLast.Size = new System.Drawing.Size(41, 21);
+            this.lblLast.TabIndex = 26;
+            this.lblLast.Text = "Last";
+            // 
+            // txtLast
+            // 
+            this.txtLast.Location = new System.Drawing.Point(84, 98);
+            this.txtLast.Name = "txtLast";
+            this.txtLast.Size = new System.Drawing.Size(122, 20);
+            this.txtLast.TabIndex = 27;
+            // 
+            // ckbxUnder25
+            // 
+            this.ckbxUnder25.AutoSize = true;
+            this.ckbxUnder25.Location = new System.Drawing.Point(36, 289);
+            this.ckbxUnder25.Name = "ckbxUnder25";
+            this.ckbxUnder25.Size = new System.Drawing.Size(155, 17);
+            this.ckbxUnder25.TabIndex = 28;
+            this.ckbxUnder25.Text = "Check if under 25 years old";
+            this.ckbxUnder25.UseVisualStyleBackColor = true;
+            // 
+            // lblAutoTrans
+            // 
+            this.lblAutoTrans.AutoSize = true;
+            this.lblAutoTrans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblAutoTrans.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblAutoTrans.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutoTrans.Location = new System.Drawing.Point(275, 119);
+            this.lblAutoTrans.Name = "lblAutoTrans";
+            this.lblAutoTrans.Size = new System.Drawing.Size(151, 22);
+            this.lblAutoTrans.TabIndex = 29;
+            this.lblAutoTrans.Text = "Auto Transmission?";
+            // 
+            // CkBxAutoTrans
+            // 
+            this.CkBxAutoTrans.AutoSize = true;
+            this.CkBxAutoTrans.Location = new System.Drawing.Point(276, 139);
+            this.CkBxAutoTrans.Name = "CkBxAutoTrans";
+            this.CkBxAutoTrans.Size = new System.Drawing.Size(150, 17);
+            this.CkBxAutoTrans.TabIndex = 30;
+            this.CkBxAutoTrans.Text = "Check box for Auto Trans.";
+            this.CkBxAutoTrans.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(552, 119);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 22);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "AC?";
+            // 
+            // ckbxAC
+            // 
+            this.ckbxAC.AutoSize = true;
+            this.ckbxAC.Location = new System.Drawing.Point(552, 144);
+            this.ckbxAC.Name = "ckbxAC";
+            this.ckbxAC.Size = new System.Drawing.Size(109, 17);
+            this.ckbxAC.TabIndex = 32;
+            this.ckbxAC.Text = "Check box for AC";
+            this.ckbxAC.UseVisualStyleBackColor = true;
+            // 
+            // lblDriversLicense
+            // 
+            this.lblDriversLicense.AutoSize = true;
+            this.lblDriversLicense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblDriversLicense.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDriversLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDriversLicense.Location = new System.Drawing.Point(500, 299);
+            this.lblDriversLicense.Name = "lblDriversLicense";
+            this.lblDriversLicense.Size = new System.Drawing.Size(179, 22);
+            this.lblDriversLicense.TabIndex = 33;
+            this.lblDriversLicense.Text = "Drivers License Number";
+            // 
+            // txtDriversLicense
+            // 
+            this.txtDriversLicense.Location = new System.Drawing.Point(541, 324);
+            this.txtDriversLicense.Name = "txtDriversLicense";
+            this.txtDriversLicense.Size = new System.Drawing.Size(126, 20);
+            this.txtDriversLicense.TabIndex = 34;
+            // 
+            // lblOptionalInsurance
+            // 
+            this.lblOptionalInsurance.AutoSize = true;
+            this.lblOptionalInsurance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblOptionalInsurance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblOptionalInsurance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOptionalInsurance.Location = new System.Drawing.Point(275, 302);
+            this.lblOptionalInsurance.Name = "lblOptionalInsurance";
+            this.lblOptionalInsurance.Size = new System.Drawing.Size(154, 22);
+            this.lblOptionalInsurance.TabIndex = 35;
+            this.lblOptionalInsurance.Text = "Optional Insurance?";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(264, 327);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(184, 17);
+            this.checkBox1.TabIndex = 36;
+            this.checkBox1.Text = "Check box for Optional Insurance";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // lblAC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(725, 416);
+            this.ClientSize = new System.Drawing.Size(725, 452);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.lblOptionalInsurance);
+            this.Controls.Add(this.txtDriversLicense);
+            this.Controls.Add(this.lblDriversLicense);
+            this.Controls.Add(this.ckbxAC);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.CkBxAutoTrans);
+            this.Controls.Add(this.lblAutoTrans);
+            this.Controls.Add(this.ckbxUnder25);
+            this.Controls.Add(this.txtLast);
+            this.Controls.Add(this.lblLast);
+            this.Controls.Add(this.lblFirst);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCostOfRental);
-            this.Controls.Add(this.btnPrintEstimate);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnNewCustomer);
+            this.Controls.Add(this.lblNewCustomer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnPrintContract);
@@ -283,15 +415,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1PickUp);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.checkBox1ReturnCus);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtAge);
-            this.Controls.Add(this.txtCustomerName);
+            this.Controls.Add(this.lblUnder25);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblVehicleType);
             this.Controls.Add(this.comboBox1Type);
-            this.Name = "Form1";
+            this.Name = "lblAC";
             this.Text = "Form 1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -305,10 +435,8 @@
         private System.Windows.Forms.Label lblVehicleType;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCustomerName;
-        private System.Windows.Forms.TextBox txtAge;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1ReturnCus;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.Label lblUnder25;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DateTimePicker dateTimePicker1PickUp;
         private System.Windows.Forms.Label label3;
@@ -316,11 +444,23 @@
         private System.Windows.Forms.Button btnPrintContract;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnPrintEstimate;
+        private System.Windows.Forms.Label lblNewCustomer;
+        private System.Windows.Forms.Button btnNewCustomer;
         private System.Windows.Forms.TextBox txtCostOfRental;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblFirst;
+        private System.Windows.Forms.Label lblLast;
+        private System.Windows.Forms.TextBox txtLast;
+        private System.Windows.Forms.CheckBox ckbxUnder25;
+        private System.Windows.Forms.Label lblAutoTrans;
+        private System.Windows.Forms.CheckBox CkBxAutoTrans;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox ckbxAC;
+        private System.Windows.Forms.Label lblDriversLicense;
+        private System.Windows.Forms.TextBox txtDriversLicense;
+        private System.Windows.Forms.Label lblOptionalInsurance;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
