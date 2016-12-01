@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace car_rental_practice
+namespace NewCusForm
 {
-    public partial class lblAC : Form
+    public partial class txtPhoneNumber : Form
     {
-        public lblAC()
+        public txtPhoneNumber()
         {
             InitializeComponent();
         }
@@ -22,22 +22,7 @@ namespace car_rental_practice
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCostOfRental_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblVehicleType_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void Middle_Click(object sender, EventArgs e)
         {
 
         }

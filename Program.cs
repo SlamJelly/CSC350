@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace car_rental_practice
+namespace NewCusForm
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace car_rental_practice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new lblAC());
+            Application.Run(new txtPhoneNumber());
         }
     }
 }
